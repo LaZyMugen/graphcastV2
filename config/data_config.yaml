@@ -1,0 +1,46 @@
+atmosphere:
+
+  file: dataset/atmosphere/atmosphereGC.nc
+
+  variables:
+    - t2m
+    - msl
+    - u10
+    - v10
+    - z
+
+ocean:
+
+  file: dataset/ocean/SST_GC.nc
+
+  variables:
+    - sst
+
+static:
+
+  derived_variables:
+    - elevation
+
+feature_stack:
+
+  channels:
+    - t2m
+    - msl
+    - u10
+    - v10
+    - sst
+    - elevation
+
+paths:
+
+  features: dataset/processed/features.npy
+
+  normalized_features: dataset/processed/normalized_features.npy
+
+  statistics_dir: dataset/metadata/statistics
+
+  x_train: dataset/processed/X.npy
+
+  y_train: dataset/processed/Y.npy
+
+  sst_mask: dataset/processed/sst_mask.npy

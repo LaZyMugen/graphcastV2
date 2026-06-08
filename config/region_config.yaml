@@ -1,0 +1,10 @@
+region:
+  name: maitri
+
+  lat_min: -80.0
+  lat_max: -60.0
+
+  lon_min: 0.0
+  lon_max: 30.0
+
+  resolution: 0.25

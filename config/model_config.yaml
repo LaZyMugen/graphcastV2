@@ -1,0 +1,31 @@
+dataset:
+
+  input_steps: 4
+
+  forecast_steps: 1
+
+normalization:
+
+  epsilon: 1.0e-8
+
+graph:
+
+  connectivity: 4
+
+training:
+
+  batch_size: 4
+
+  num_workers: 0
+
+  shuffle: true
+
+model:
+
+  input_channels: 6
+
+  hidden_dim: 64
+
+  graph_layers: 4
+
+  output_channels: 6
