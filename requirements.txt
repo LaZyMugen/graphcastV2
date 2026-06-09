@@ -1,0 +1,15 @@
+numpy
+xarray
+netcdf4
+pyyaml
+
+torch
+torch-geometric
+
+matplotlib
+
+scipy
+pandas
+
+cfgrib
+eccodes
